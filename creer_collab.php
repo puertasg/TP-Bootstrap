@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/validation.js"></script>
     <title>Ajouter un collaborateur</title>
+
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     </div>
 
     <div class="container">
-        <form class="needs-validation" novalidate>
+        <form id="formCollab" class="needs-validation" novalidate>
             <div class="form-group row">
                 <label for="inputNom" class="col-form-label col-4">Nom</label>
                 <div class="col-8 pr-0">
@@ -79,25 +80,30 @@
                     <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modelId">Créer</button>
                 </div>
             </div>
-        </form>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="modelTitleId">Création d'un collaborateur</h4>
-                </div>
-                <div class="modal-body">
-                    Vous êtes sur le point de créer un nouveau collaborateur : 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Confirmer</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+            <!-- Modal -->
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modelTitleId">Création d'un collaborateur</h4>
+                        </div>
+                        <div class="modal-body">
+                            Vous êtes sur le point de créer un nouveau collaborateur : <br>
+                            <span>Nom: </span><br>
+                            <span>Prénom: </span><br>
+                            <span>Date de naissance: </span><br>
+                            <span>Adresse: </span><br>
+                            <span>Numéro de sécurité sociale: </span><br>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" value="Confirmer" class="btn btn-primary">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 
     <!-- Optional JavaScript -->
@@ -108,6 +114,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <script src="./js/modal_close.js"></script>
 </body>
 
 </html>
