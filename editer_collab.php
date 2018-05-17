@@ -20,18 +20,26 @@
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <img src="./images/default-profile.png" class="img-fluid" alt="photo"/>
+        <img src="./images/default-profile.png" class="img-fluid" alt="photo" />
       </div>
 
       <div class="col-8">
-        <h4 class="text-uppercase">Nom</h4>
-        <h4 class="text-capitalize">Prénom</h4>
-        -
-        <span>Matricule</span>
-        <input type="checkbox">Désactiver
+        <div class="row">
+          <div class="col-7">
+            <h4>
+              <span class="text-uppercase">Nom</span>
+              <span class="text-capitalize">Prénom</span>
+              -
+              <span>Matricule</span>
+            </h4>
+          </div>
+          <div class="col-5">
+            <input type="checkbox">Désactiver
+          </div>
+        </div>
       </div>
     </div>
-    
+
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

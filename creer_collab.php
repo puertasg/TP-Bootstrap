@@ -11,7 +11,6 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/validation.js"></script>
     <title>Ajouter un collaborateur</title>
 
 </head>
@@ -24,14 +23,11 @@
     </div>
 
     <div class="container">
-        <form id="formCollab" class="needs-validation" novalidate>
+        <form id="formCollab">
             <div class="form-group row">
                 <label for="inputNom" class="col-form-label col-4">Nom</label>
                 <div class="col-8 pr-0">
                     <input type="text" id="inputNom" class="form-control" required>
-                    <div class="invalid-feedback">
-                        Le nom est obligatoire.
-                    </div>
                 </div>
             </div>
 
@@ -134,7 +130,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
+    <script src="./js/validation.js"></script>
     <script src="./js/modal.js"></script>
+
+    <script>
+        invalidForm();
+    </script>
 </body>
 
 </html>
