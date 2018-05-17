@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="ml-auto p-1">
-                <a href="./creer_collab.html" class="btn btn-primary">Ajouter un collaborateur</a>
+                <a href="./creer_collab.php" class="btn btn-primary">Ajouter un collaborateur</a>
             </div>
         </div>
     </div>
