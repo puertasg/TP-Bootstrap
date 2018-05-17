@@ -23,11 +23,14 @@
     </div>
 
     <div class="container">
-        <form id="formCollab">
+        <form id="formCollab" class="needs-validation" novalidate>
             <div class="form-group row">
                 <label for="inputNom" class="col-form-label col-4">Nom</label>
                 <div class="col-8 pr-0">
                     <input type="text" id="inputNom" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Le nom est obligatoire.
+                    </div>
                 </div>
             </div>
 
@@ -134,7 +137,13 @@
     <script src="./js/modal.js"></script>
 
     <script>
-        invalidForm();
+        var url = $(location).attr("href");
+        var args = url.split("?");
+        if(args[1] == "errors")
+        {
+            $(".form-control").css("border-color", "#DC3545");
+            $(".invalid-feedback").css("display", "block");
+        }
     </script>
 </body>
 
