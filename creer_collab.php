@@ -90,11 +90,30 @@
                         </div>
                         <div class="modal-body">
                             Vous êtes sur le point de créer un nouveau collaborateur : <br>
-                            <span>Nom: </span><br>
-                            <span>Prénom: </span><br>
-                            <span>Date de naissance: </span><br>
-                            <span>Adresse: </span><br>
-                            <span>Numéro de sécurité sociale: </span><br>
+                            <div class="row">
+                                <span class="col-8">Nom: </span>
+                                <span id="modalNom" class="col-4"></span>
+                            </div>
+                            
+                            <div class="row">
+                                <span class="col-8">Prénom: </span>
+                                <span id="modalPrenom" class="col-4"></span>
+                            </div>
+
+                            <div class="row">
+                                <span class="col-8">Date de naissance: </span>
+                                <span id="modalDate" class="col-4"></span>
+                            </div>
+                            
+                            <div class="row">
+                                <span class="col-8">Adresse: </span>
+                                <span id="modalAdresse" class="col-4"></span>
+                            </div>
+                            
+                            <div class="row">
+                                <span class="col-8">Numéro de sécurité sociale: </span>
+                                <span id="modalNoSecu" class="col-4"></span>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <input type="submit" value="Confirmer" class="btn btn-primary">
@@ -115,7 +134,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <script src="./js/modal_close.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
