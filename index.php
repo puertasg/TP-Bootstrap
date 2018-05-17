@@ -43,7 +43,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="ml-auto p-1">
-                <button type="button" class="btn btn-primary">Ajouter un collaborateur</button>
+                <a href="./creer_collab.html" class="btn btn-primary">Ajouter un collaborateur</a>
             </div>
         </div>
     </div>
