@@ -29,7 +29,7 @@
                 <div class="col-8 pr-0">
                     <input type="text" id="inputNom" class="form-control" required>
                     <div class="invalid-feedback">
-                        Le nom est obligatoire
+                        Le nom est obligatoire.
                     </div>
                 </div>
             </div>
@@ -76,10 +76,28 @@
 
             <div class="row">
                 <div class="ml-auto">
-                    <input type="submit" class="btn btn-sm btn-success" value="Créer">
+                    <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modelId">Créer</button>
                 </div>
             </div>
         </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modelTitleId">Création d'un collaborateur</h4>
+                </div>
+                <div class="modal-body">
+                    Vous êtes sur le point de créer un nouveau collaborateur : 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Confirmer</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
