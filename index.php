@@ -53,10 +53,11 @@
             <h1>Les collaborateurs</h1>
         </div>
         <div class="row">
-            <p class="my-auto">Rechercher un nom ou  un prénom qui commence par:</p>
+            <p class="my-auto">Rechercher un nom ou un prénom qui commence par:</p>
             <input type="text" class="my-auto m-1">
             <button type="button" class="my-auto btn btn-primary btn-sm">Rechercher</button>
-            <input type="checkbox" class="my-auto m-1" id="checkboxCollabDisabled"> <label for="checkboxCollabDisabled" class="my-auto">Voir les collaborateurs désactivés</label>
+            <input type="checkbox" class="my-auto m-1" id="checkboxCollabDisabled">
+            <label for="checkboxCollabDisabled" class="my-auto">Voir les collaborateurs désactivés</label>
         </div>
         <div class="row">
             <p class="my-auto">Filtrer par département: </p>
@@ -66,6 +67,20 @@
                 <option value="rh">Ressources humaines</option>
                 <option value="info">Informatique</option>
             </select>
+        </div>
+        <div class="row">
+            <?php 
+                include "./elements/collab_card.html";
+                include "./elements/collab_card.html";
+                include "./elements/collab_card.html"; 
+            ?>
+        </div>
+        <div class="row">
+            <?php 
+                include "./elements/collab_card.html";
+                include "./elements/collab_card.html";
+                include "./elements/collab_card.html"; 
+            ?>
         </div>
     </div>
 
