@@ -10,11 +10,77 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/validation.js"></script>
     <title>Ajouter un collaborateur</title>
 </head>
 
 <body>
     <?php include "elements/navbar.html"; ?>
+
+    <div class="container-fluid">
+        <h4>Nouveau Collaborateur</h4>
+    </div>
+
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <div class="form-group row">
+                <label for="inputNom" class="col-form-label col-4">Nom</label>
+                <div class="col-8 pr-0">
+                    <input type="text" id="inputNom" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Le nom est obligatoire
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputPrenom" class="col-form-label col-4">Prénom</label>
+                <div class="col-8 pr-0">
+                    <input type="text" id="inputPrenom" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Le prénom est obligatoire.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputDate" class="col-form-label col-4">Date de naissance</label>
+                <div class="col-8 pr-0">
+                    <input type="text" id="inputDate" class="form-control" required>
+                    <div class="invalid-feedback">
+                        La date de naissance est obligatoire.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="textAdresse" class="col-form-label col-4">Adresse</label>
+                <div class="col-8 pr-0">
+                    <textarea type="text" id="textAdresse" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        L'adresse est obligatoire.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputNoSecu" class="col-form-label col-4">Numéro de sécurité sociale</label>
+                <div class="col-8 pr-0">
+                    <input type="text" id="inputNoSecu" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Le numéro de sécurité sociale est obligatoire.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="ml-auto">
+                    <input type="submit" class="btn btn-sm btn-success" value="Créer">
+                </div>
+            </div>
+        </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
