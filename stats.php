@@ -10,12 +10,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Statistiques</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <?php include "elements/navbar.html"; ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="ml-auto p-1">
+                <a href="./creer_collab.php" class="btn btn-primary">Ajouter un collaborateur</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
 
+        <h1>Statistiques</h1>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Chemin</th>
+                    <th>Nombre de visites</th>
+                    <th>Min (ms)</th>
+                    <th>Max (ms)</th>
+                    <th>Moyenne (ms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
