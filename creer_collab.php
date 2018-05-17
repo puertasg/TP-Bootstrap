@@ -77,7 +77,7 @@
 
             <div class="row">
                 <div class="ml-auto">
-                    <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modelId">Créer</button>
+                    <button type="button" id="buttonCreer" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modelId">Créer</button>
                 </div>
             </div>
 
